@@ -110,7 +110,7 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
 
 ## 📊 Business Insights
 - **Revenue and ProfitDrivers:**  
-     Dark Chocolate 70% (Cadbury) emerged as a top revenue and profit generator.  
+     Dark Chocolate 50% (Cadbury) emerged as a top revenue and profit generator.  
   
   ![Top Products By Revenue](sql_files/power_bi_screenshots/top_10_products_by_revenue.png)  
 
