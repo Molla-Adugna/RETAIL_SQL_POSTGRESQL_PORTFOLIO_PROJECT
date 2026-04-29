@@ -31,15 +31,15 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
 - Data integrity validation (foreign key checks, missing values)
 - Business storytelling with SQL insights
 - VS Code workflow for SQL projects
-- Power Bi to vizualize results
+- Power BI to vizualize results
 
 ## 🔎 Key Analytical Queries
 1. **Top-Selling Products by Revenue**  
-   Identified products contributing the highest revenue. 
+   Identified products contributing the highest revenue: 
 
    ```sql
        SELECT p.product_name,
-            SUM(s.revenue) AS total_revenue
+             SUM(s.revenue) AS total_revenue
       FROM sales s
       JOIN products p ON s.product_id = p.product_id
       GROUP BY p.product_name
@@ -49,11 +49,11 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
 
 
 2. **Most Profitable Products**  
-   Ranked products by total profit contribution.  
+   Ranked products by total profit contribution:  
 
    ```sql
     SELECT p.product_name,
-         SUM(s.profit) AS total_profit
+           SUM(s.profit) AS total_profit
     FROM sales s
     JOIN products p ON s.product_id = p.product_id
     GROUP BY p.product_name
@@ -65,13 +65,13 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
 
 
 3. **Store Performance**  
-   Compared revenue and profit across store locations.  
+   Compared revenue and profit across store locations:  
      
      ```sql
     SELECT st.store_name,
-          SUM(s.revenue) AS store_revenue,
-          SUM(s.profit) AS store_profit,
-          cal.year
+           SUM(s.revenue) AS store_revenue,
+           SUM(s.profit) AS store_profit,
+           cal.year
     FROM sales s
     JOIN stores st ON s.store_id = st.store_id
     JOIN calendar cal ON s.order_date = cal.date
@@ -83,7 +83,7 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
     ```
 
 4. **Customer Loyalty Impact**  
-   Measured spending and profitability differences between loyalty members and non-members.  
+   Measured spending and profitability differences between loyalty members and non-members:  
      
      ```sql
     SELECT c.loyalty_member,
@@ -96,12 +96,12 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
     ```
 
 5. **Seasonality Trends**  
-   Analyzed monthly revenue and profit to reveal peak sales periods.  
+   Analyzed monthly revenue and profit to reveal peak sales periods:  
 
    ```sql
     SELECT cal.month,
-         SUM(s.revenue) AS monthly_revenue,
-         SUM(s.profit) AS monthly_profit
+          SUM(s.revenue) AS monthly_revenue,
+          SUM(s.profit) AS monthly_profit
    FROM sales s
    JOIN calendar cal ON s.order_date = cal.date
    GROUP BY cal.month
@@ -109,12 +109,14 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
    ```
 
 ## 📊 Business Insights
-- **Revenue and ProfitDrivers:** Dark Chocolate 70% (Cadbury) emerged as a top revenue and profit generator.  
+- **Revenue and ProfitDrivers:**  
+     Dark Chocolate 70% (Cadbury) emerged as a top revenue and profit generator.  
   
   ![Top Products By Revenue](sql_files/power_bi_screenshots/top_10_products_by_revenue.png)  
 
   ![Top 10 Products By Profit](sql_files/power_bi_screenshots/top_10_products_by_profit.png)
-- **Customer Loyalty:** Loyalty members contributed ~60% of profit despite being fewer in number.  
+- **Customer Loyalty:**
+      Loyalty members contributed ~60% of profit despite being fewer in number.  
 ![Customers Loyalty Impact in Revenue and Profit](sql_files/power_bi_screenshots/customer_loyality_impact_on_revenue_or_profit_generation.png)
 - **Seasonality:** January sales peaked, confirming strong holiday demand.  
   ![Monthly Seasonality Revenue and Profit](sql_files/power_bi_screenshots/monthly_seasonalty_revenue_and_profit.png)
@@ -123,11 +125,11 @@ This dataset forms the foundation for my **SQL analysis + Power BI dashboards**,
 
    ![Sum Of Revenue and Profit By Top 15 Stores](sql_files/power_bi_screenshots/sum_of_store_profit_and_revenue_by_top_15_store_names.png)
 
-## 🚀 Recruiter Impact
+## 🚀 Project Impact
 This project demonstrates:
 - Ability to **design and query relational databases**.  
 - Skill in **transforming raw data into actionable insights**.
-- Skill in **Vizualizing results in Power Bi".  
+- Skill in **Vizualizing results in Power BI**.  
 - Strength in **business storytelling** — translating SQL outputs into strategic recommendations.  
 
 Screenshots of query results and Power BI visuals are included to showcase both technical execution and analytical presentation.
