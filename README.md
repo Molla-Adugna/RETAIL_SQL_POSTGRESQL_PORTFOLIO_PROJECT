@@ -1,4 +1,5 @@
-# Retail Sales Analysis – SQL Portfolio Project
+# Retail Sales Analysis With SQL, PostgreSSQL and Power BI  
+
 
 ## 📂 Project Overview
 This project analyzes retail sales data using PostgreSQL, connected through VS Code.  
