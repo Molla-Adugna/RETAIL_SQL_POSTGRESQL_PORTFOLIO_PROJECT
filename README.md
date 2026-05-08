@@ -1,5 +1,5 @@
 # Retail Sales Analysis With SQL, PostgreSSQL and Power BI  
-
+![Retail Sales Analysis](https://github.com/Molla-Adugna/retail-sales-analysis-with-sql-postgresql-powerbi/blob/main/Retail_SQL_PostgreSQL_Power%20BI_Project_Thumbnail.jpg?raw=true)
 
 ## 📂 Project Overview
 This project analyzes retail sales data using PostgreSQL, connected through VS Code.  
